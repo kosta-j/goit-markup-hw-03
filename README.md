@@ -1,1 +1,3 @@
-This is a repository for Home Work #2
+# goit-markup-hw-03
+
+This is a repository for Home Work #3
