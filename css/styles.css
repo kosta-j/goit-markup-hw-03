@@ -10,15 +10,20 @@
   --logo-font-family: 'Raleway', sans-serif;
 }
 
-ul {
-  list-style: none;
+/* RESETS */
+
+img {
+  display: block;
 }
-a {
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
   text-decoration: none;
 }
-address {
-  font-style: normal;
-}
+/* RESETS end */
 
 /* COMMON STYLES */
 body {
@@ -29,8 +34,14 @@ body {
   font-family: var(--main-font-family);
   letter-spacing: 0.03em;
 }
+.container {
+  width: 1200px;
+  margin-left: 15px;
+  margin-right: 15px;
+  outline: 1px solid teal;
+}
 
-/* HIDE HEADER */
+/* HIDE HEADINGS */
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -83,6 +94,13 @@ body {
 /* COMMON STYLES end */
 
 /* HEADER */
+.page-header {
+  min-height: 80px;
+}
+.header-container {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .header-logo {
   color: var(--title-text-color);
 }
@@ -123,6 +141,10 @@ body {
 .hero {
   color: var(--main-bg-color);
   background-color: var(--secondary-dark-bg-color);
+}
+.hero-container {
+  /* padding-top: 200px; */
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
@@ -195,6 +217,10 @@ body {
 .footer-contacts:focus {
   color: var(--accent-color);
 }
+.page-adress {
+  font-style: normal;
+}
+/* FOOTER end */
 
 /* PORTFOLIO */
 .project-list .title {
