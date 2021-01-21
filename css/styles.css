@@ -210,15 +210,26 @@ body {
 .team {
   background-color: var(--secondary-light-bg-color);
 }
+.team-item {
+  padding-bottom: 30px;
+}
+.team .photo {
+  margin: auto;
+  margin-bottom: 30px;
+}
 .team .title {
+  margin-bottom: 10px;
+  margin: 0;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 .team .position {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 /* TEAM end */
 
@@ -226,6 +237,10 @@ body {
 .page-footer {
   color: var(--main-bg-color);
   background-color: var(--secondary-dark-bg-color);
+}
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-adress {
   font-size: 14px;
