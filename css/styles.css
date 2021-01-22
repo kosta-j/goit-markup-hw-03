@@ -54,7 +54,7 @@ body {
 }
 .container {
   width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
   padding-left: 15px;
@@ -125,46 +125,74 @@ body {
 /* COMMON STYLES end */
 
 /* HEADER */
-.page-header {
-  min-height: 80px;
-}
 .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 24px;
   padding-bottom: 25px;
 }
+
 .header-logo {
+  margin-right: 93px;
   color: var(--title-text-color);
 }
 
 /* SITE NAV */
-.site-nav .link {
-  color: var(--title-text-color);
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 
+.site-nav {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  display: block;
+
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+
 .site-nav .active {
   color: var(--accent-color);
 }
 
 /* CONTACTS */
-.header-contacts {
-  color: var(--primary-text-color);
+.contacts {
+  display: flex;
+}
 
+.header-contacts {
+  display: block;
+
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent-color);
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 /* HEADER end */
 
