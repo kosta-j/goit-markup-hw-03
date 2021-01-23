@@ -39,6 +39,10 @@ li {
 .link {
   text-decoration: none;
 }
+
+.page-adress {
+  font-style: normal;
+}
 /* RESETS end */
 
 /* COMMON STYLES */
@@ -281,6 +285,10 @@ body {
   background-color: var(--secondary-dark-bg-color);
 }
 
+.page-adress .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -292,10 +300,13 @@ body {
 }
 
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
   color: var(--main-bg-color);
 }
 
 .footer-contacts {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
@@ -305,10 +316,6 @@ body {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
-}
-
-.page-adress {
-  font-style: normal;
 }
 /* FOOTER end */
 
@@ -343,7 +350,7 @@ body {
   margin-right: 0;
 }
 
-.project-item:last-child(-n + 3) {
+.project-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
