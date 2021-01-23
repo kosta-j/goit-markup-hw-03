@@ -273,18 +273,32 @@ body {
   background-color: var(--secondary-light-bg-color);
 }
 
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .team-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
   padding-bottom: 30px;
 }
 
-.team .photo {
-  margin: auto;
-  margin-bottom: 30px;
+.team-item:nth-child(4n) {
+  margin-right: 0;
 }
 
+.team-item:nth-last-child(-n + 4) {
+  padding-bottom: 0;
+}
+
+.team-description-wrapper {
+  outline: 1px solid teal;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team .title {
   margin-bottom: 10px;
-  margin: 0;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
