@@ -238,14 +238,11 @@ body {
 /* ADVANTAGES */
 .advantages {
   display: flex;
+  justify-content: space-between;
 }
 
 .advantages-item {
   width: 270px;
-}
-
-.advantages-item:not(:nth-child(4n)) {
-  margin-right: 30px;
 }
 
 .advantages .title {
