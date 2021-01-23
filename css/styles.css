@@ -88,10 +88,6 @@ body {
 
 /* BUTTONS */
 .button {
-  min-width: 200px;
-  min-height: 50px;
-  padding: 10px 32px;
-
   color: var(--title-text-color);
   background-color: var(--secondary-light-bg-color);
 
@@ -100,7 +96,7 @@ body {
   font-size: 16px;
   line-height: 1.62;
   display: inline-block;
-  border: 1px solid transparent;
+  border: 0;
   border-radius: 4px;
 }
 .button:hover,
@@ -125,6 +121,9 @@ body {
 /* COMMON STYLES end */
 
 /* HEADER */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -215,6 +214,9 @@ body {
   text-transform: uppercase;
 }
 .hero .button {
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -278,33 +280,73 @@ body {
   color: var(--main-bg-color);
   background-color: var(--secondary-dark-bg-color);
 }
+
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-adress {
   font-size: 14px;
   line-height: 1.71;
 }
+
 .footer-logo {
   color: var(--main-bg-color);
 }
+
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
 }
+
 .page-adress {
   font-style: normal;
 }
 /* FOOTER end */
 
 /* PORTFOLIO */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-buttons .button {
+  min-height: 38px;
+  padding: 6px 22px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.project-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.project-item:last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .project-list .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -312,8 +354,14 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .project-list .description {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+
+.project-description-wrapper {
+  padding: 20px 24px;
+  text-align: center;
 }
