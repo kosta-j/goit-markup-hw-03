@@ -63,7 +63,6 @@ body {
   padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid teal;
 }
 
 /* HIDE HEADINGS */
@@ -293,7 +292,6 @@ body {
 }
 
 .team-description-wrapper {
-  outline: 1px solid teal;
   padding-top: 30px;
   padding-bottom: 30px;
 }
