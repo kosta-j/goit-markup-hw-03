@@ -262,7 +262,10 @@ body {
 /* ADVANTAGES end */
 
 /* WHAT WE DO */
-
+.whatwedo {
+  display: flex;
+  justify-content: space-between;
+}
 /* WHAT WE DO end*/
 
 /* TEAM */
