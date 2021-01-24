@@ -205,12 +205,16 @@ body {
 }
 
 .hero-container {
-  padding: 200px 250px;
+  padding: 200px 0;
   text-align: center;
 }
 
 .hero-title {
+  width: 700px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -237,11 +241,21 @@ body {
 /* ADVANTAGES */
 .advantages {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .advantages-item {
-  width: 270px;
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.advantages-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.advantages-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
 }
 
 .advantages .title {
@@ -263,7 +277,21 @@ body {
 /* WHAT WE DO */
 .whatwedo {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.whatwedo-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.whatwedo-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.whatwedo-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 /* WHAT WE DO end*/
 
@@ -280,7 +308,7 @@ body {
 .team-item {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .team-item:nth-child(4n) {
@@ -288,12 +316,17 @@ body {
 }
 
 .team-item:nth-last-child(-n + 4) {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .team-description-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  background-color: var(--main-bg-color);
+  border-radius: 0 0 4px 4px;
 }
 .team .title {
   margin-bottom: 10px;
@@ -402,5 +435,7 @@ body {
 
 .project-description-wrapper {
   padding: 20px 24px;
-  text-align: center;
+
+  background-color: var(--main-bg-color);
+  border: 1px solid #eeeeee;
 }
