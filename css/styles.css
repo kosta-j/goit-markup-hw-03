@@ -309,6 +309,8 @@ body {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
   margin-bottom: 30px;
+  background-color: var(--main-bg-color);
+  border-radius: 0 0 4px 4px;
 }
 
 .team-item:nth-child(4n) {
@@ -324,10 +326,8 @@ body {
   padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
-
-  background-color: var(--main-bg-color);
-  border-radius: 0 0 4px 4px;
 }
+
 .team .title {
   margin-bottom: 10px;
   color: var(--title-text-color);
